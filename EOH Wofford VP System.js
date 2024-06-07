@@ -1,3 +1,33 @@
+// Your code 1 should be wrapped in this
+// These magical lines are comments - not code)
+
+e=campaignTrail_temp
+if (!e.done) {
+e.done = true;
+
+// Paste all of your Code 1 over here.
+
+
+styling = document.createElement("style");
+document.head.appendChild(styling);
+
+styling.innerHTML = `
+#opponent_selection_id_back {
+    display: none;
+}
+`
+
+let z = new MutationObserver((mutationsList, observer) => {
+    let runningMateSummary = document.querySelector("#running_mate_summary");
+    if (runningMateSummary) {
+        $("#running_mate_id_button").click();
+        observer.disconnect()
+    }
+});
+
+}
+
+// The rest of this stuff belongs at the bottom of your Code 2
 // First you have to set variables for each running mate after the code with your questions/answers/feedback.
 var heflin = 0;
 var richards = 0;
