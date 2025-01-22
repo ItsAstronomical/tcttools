@@ -132,6 +132,29 @@ var changeGameDisp = (hide) => {
             $("#running_mate_pic").attr("src", e.running_mate_image_url)
         }
 
+    if(e.running_mate_last_name==="Borah"){ // Use this to change questions based on your VP
+	    console.log(campaignTrail_temp.questions_json[5])
+        campaignTrail_temp.questions_json[5] = {
+        "model": "campaign_trail.question",
+        "pk": 3058094,
+        "fields": {
+          "priority": 1,
+          "description": "You've steered the convention to select William Borah as the nominee. Given the policy differences between you two - why?",
+          "likelihood": 1
+        }
+      }
+	var button1 = document.getElementById('view_electoral_map');	
+
+	button1.click();
+
+
+	setTimeout(function(){
+	var button2 = document.getElementById('resume_questions_button');	
+        button2.click();
+	}, 50);
+	console.log(campaignTrail_temp.questions_json[7])
+	}
+        
         $("#inner_window_4").remove();
         changeGameDisp(false);
     })
