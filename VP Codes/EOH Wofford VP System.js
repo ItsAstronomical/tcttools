@@ -61,7 +61,7 @@ cyoAdventure = function (a) {
     baucus += 1;
     feingold += 1;              
   }
-  // I need to start pressing the case for a good foreign policy agenda. I'll ask Daschle if he can assign me to to the Senate Foreign Relations Committee for the next two years.
+  // I need to start pressing the case for a good foreign policy agenda. I'll ask Daschle if he can assign me to the Senate Foreign Relations Committee for the next two years.
   if(ans == 5142){
     pell += 1;
     hamilton +=1;                 
