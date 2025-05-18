@@ -137,14 +137,14 @@ function openHeadquarter() {
     // Create Bulk of the Text
     // Duplicate this section to add more lines of text. Make sure to change the variable name "a" to something else. In this case, I changed it to "b".
     let a = document.createElement('p');
-    a.textContent = 'Your success rate in the lead up to the 1912 Democratic Convention is ' + primary + '.'; // This is the text that will be displayed. You can change this to whatever you want. ' + function + ' will display the number from the function.
+    a.innerHTML = 'Your success rate in the lead up to the 1912 Democratic Convention is ' + primary + '.'; // This is the text that will be displayed. You can change this to whatever you want. ' + function + ' will display the number from the function.
     // a.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
     a.style.color = 'black'; // Can be used to change the color of the text
     a.style.margin = '8px'; // Can be used to change the space in between the text. Useful if you have a lot of functions.
     hqDiv.appendChild(a);
 
     let b = document.createElement('p');
-    b.textContent = '' + bliss + ' opponents have been attacked during the course of the Democratic Primary.';
+    b.innerHTML = '' + bliss + ' opponents have been attacked during the course of the Democratic Primary.';
     // b.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
     b.style.color = 'black';
     b.style.margin = '8px';
